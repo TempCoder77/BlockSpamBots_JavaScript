@@ -1,1 +1,1 @@
-# BlockSpamBots_JavaScript
+<h1> Seting up project block spam bot for javascript</h1>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Block spam demo</title>
+        <script src="BlockSpamBots.js"></script>
+    </head>
+    <body>
+
+        <h2>JavaScript Demo Block spam bots</h2>
+        <p id="demo"></p>
+        <script>
+            const run_demo = new BlockSpamBots("Micke", "test@test.org", "Spam goes here!");
+            document.getElementById("demo").innerHTML = run_demo.get_name() + " " + run_demo.get_mail()  + " " + run_demo.get_text();
+        </script>
+        
+
+</body>
+</html>
