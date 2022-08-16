@@ -14,6 +14,13 @@
                 let text = document.forms["testForm"]["text"].value
                 const run_demo = new BlockSpamBots(name, email, text);
                 document.getElementById("demo").innerHTML = run_demo.get_name() + " " + run_demo.get_mail()  + " " + run_demo.get_text();
+                let element = document.getElementById("demo");
+                element.classList.add("border", "border-dark", "rounded");
+                if (run_demo.get_text() == true) {
+                    document.getElementById("demo").style.backgroundColor = "lightblue";
+                } else {
+                    document.getElementById("demo").style.backgroundColor = "red";
+                } 
                 return false;
             }
         </script>
@@ -21,7 +28,7 @@
     <body>
         <div class="container col-6 mt-5">
             <h2>JavaScript Demo Block spam bots</h2>
-            <p id="demo"></p>
+            <p id="demo" class="p-4"></p>
         </div>
         <script>
             
